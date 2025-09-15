@@ -1,2 +1,2 @@
-#[= Introduction]
+= Introduction
 I am the introduction

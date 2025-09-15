@@ -1,10 +1,10 @@
 // Enter your thesis data here:
 #let title = "Desigining a Curing System for the ISAN project"
 #let international-title = "Desigining a Curing System for the ISAN project"
-#let document-type = "Projektarbeit"
-#let supervisor = "Prof. Dr. Winnie the Pooh"
+#let document-type = "Project Thesis"
+#let supervisor = "Prof. Dr. Thomas M. Deserno"
 #let second-supervisor = "Piglet"
-#let advisors = ("Tigger",)
+#let advisors = ("Viktor Sobotta",)
 #let author = (
   name: "Nikkel Lennart",
   surname: "Heesen",

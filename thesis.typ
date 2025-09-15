@@ -37,9 +37,7 @@
 
 #include "chapter/01-introduction.typ"
 #include "chapter/02-environment.typ"
-//#include "chapter/02-background.typ"
-//#include "chapter/03-approach.typ"
-//#include "chapter/04-relatedwork.typ"
+#include "chapter/03-background.typ"
 
 //#bibliography("./bibtex.bib")
 
