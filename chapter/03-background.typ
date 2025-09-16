@@ -2,3 +2,6 @@
 
 - research of design choices and standards in emergency software.
 - analysis of other software projects similar to this
+
+== The ISAN project
+@haghi2021automatic

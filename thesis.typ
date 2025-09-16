@@ -39,7 +39,7 @@
 #include "chapter/02-environment.typ"
 #include "chapter/03-background.typ"
 
-//#bibliography("./bibtex.bib")
+#bibliography("bibliography.bib")
 
 //#include "chapter/98-statutory-declaration.typ"
 //#include "chapter/99-Appendix.typ"

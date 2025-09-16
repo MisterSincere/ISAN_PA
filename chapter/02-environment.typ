@@ -1,16 +1,14 @@
 = Environment
 
-Modern options in frontend like vue. Backend stays to use python like the rest of the project's modules since it is an easy language. Moreover connexion and flasks are the options, they are easy to use and enough for the scope of this project. So no switch to something like FastApi.
+Typescript: *type safety*, better maintainability, reducing common errors associated with dynamic typing.
+Sass introduces advanced styling capabilities ensuring scalable styling through reusable design components.
+Vue.js offers great reactivity with a component-based architecture ensuring great modularity.
+As a build tool using Vite accelerates development with fast build and its hot-module reloading, optimized bundling.
+The templating engine of Flask is Jinja good for flexible integration between the python back-end and the local client app.
 
-The techstack is the following.\
-*Backend*:
-- python
-- flask wrapped in connexion
-- jinja
+Back-end relies on Python which is widely adopted and has an extensive ecosystem. Flask offers a minimal yet flexible framework for rapid service development, while Connexion enforces OpenAPI-driven design, enabling automatic validation, documentation and maintainable APIs.
 
-*Frontend*:
-- typescript, html, sass css
-- vue, vite compiled
+Together this stack ensures good reactivity for interactive visualization with robust computation workflows in the back-end and good tooling for ensuring maintainability.
 
 #figure(
   table(
@@ -18,15 +16,15 @@ The techstack is the following.\
     inset: 5pt,
     align: horizon,
     table.header(
-      [], [*Frontend*], [*Backend*],
+      [], [*Front-end*], [*Back-end*],
     ),
     [*Languages*], [HTML, SASS, TS, Jinja], [Python],
     [*Frameworks*], [Vue.js (with Vite)], [Flask/Connexion],
   ),
-  caption: [Techstack],
+  caption: [Technology stack],
 ) <techstack>
 
 == Development setup
 
 The @techstack shows blablabla\
-To ease developing especially for frontend hot reloading is an important tool. Vite's development server can track changes and reload the webpage automatically.
+To ease developing especially for front-end hot reloading is an important tool. Vite's development server can track changes and reload the webpage automatically.
