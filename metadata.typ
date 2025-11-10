@@ -3,7 +3,6 @@
 #let international-title = "Desigining a Curing System for the ISAN project"
 #let document-type = "Project Thesis"
 #let supervisor = "Prof. Dr. Thomas M. Deserno"
-#let second-supervisor = "Piglet"
 #let advisors = ("Viktor Sobotta",)
 #let author = (
   name: "Nikkel Lennart",

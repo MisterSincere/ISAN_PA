@@ -1,5 +1,6 @@
 #import "@local/tubs-thesis-template:0.1.0": tu-braunschweig-thesis, titlepage, disclaimer
 #import "metadata.typ": *
+
 #show: tu-braunschweig-thesis.with(
   title: international-title,
   author: author,
@@ -14,7 +15,6 @@
   title: international-title,
   document-type: document-type,
   supervisor: supervisor,
-  second-supervisor: second-supervisor,
   advisors: advisors,
   author: author,
   city: city,
@@ -38,6 +38,7 @@
 #include "chapter/01-introduction.typ"
 #include "chapter/02-environment.typ"
 #include "chapter/03-background.typ"
+#include "chapter/04-architecture.typ"
 
 #bibliography("bibliography.bib")
 
