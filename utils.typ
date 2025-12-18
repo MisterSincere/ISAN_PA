@@ -2,6 +2,8 @@
 
 #let todo(text) = margin-note(text)
 #let inline-todo(text) = inline-note(text)
+#let nh(text) = margin-note(stroke: green, text)
+#let vs(text) = margin-note(stroke: blue, text)
 
 #let code(
   code,

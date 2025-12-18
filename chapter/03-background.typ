@@ -1,3 +1,5 @@
+#import "../utils.typ": *
+
 = Background
 
 - research of design choices and standards in emergency software.
@@ -37,3 +39,8 @@
 - Automatic alerting of accidents and emergencies: The international standard accident number and vital sign data embedded in future PACSa @barakat2020automatic
 - Proposing an international standard accident number for interconnecting information and communication technology systems of the rescue chain @spicher2021proposing
 - Automatic information exchange in the early rescue chain using the International Accident Number (ISAN) @haghi2021automatic
+
+== Vue
+#nh("Is this necessary / good?")
+=== Components
+=== Composables

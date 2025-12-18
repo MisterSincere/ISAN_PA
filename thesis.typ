@@ -1,5 +1,6 @@
 #import "@local/tubs-thesis-template:0.1.0": tu-braunschweig-thesis, titlepage, disclaimer
 #import "metadata.typ": *
+#import "@preview/drafting:0.2.2": note-outline
 
 #show: tu-braunschweig-thesis.with(
   title: international-title,
@@ -32,6 +33,8 @@
 
 #outline(depth: 2)
 
+#note-outline()
+
 #set page(numbering: "1")
 #counter(page).update(1)
 
@@ -39,6 +42,8 @@
 #include "chapter/02-environment.typ"
 #include "chapter/03-background.typ"
 #include "chapter/04-architecture.typ"
+#include "chapter/05-design.typ"
+#include "chapter/06-conclusion.typ"
 
 #bibliography("bibliography.bib")
 
