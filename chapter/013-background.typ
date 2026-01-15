@@ -40,9 +40,9 @@ This results in a total of seven fields, each following the tag-value paradigm. 
   [Unique identifier], [*MAC address*, bluetooth device address, international mobile equipment identity (IMEI), international mobile station equipment identity (IMSI), manufacturer serial number (MSN), vehicle identification number (VIN), random number],
 )
 
-==== Master case index
-The emergency care chain is comprised of a great number of heterogeneous systems resulting in siloed data. Looking at combined data of a patient's accident and emergency case, including data of is or her treatment and care plus corresponding outcomes in a comprehensive way across all sectors is difficult. Emergency medical services (EMS) collect rescue data, initial findings and continuous health monitoring data during a patient's transport.
-A patients medical data is recorded in a hospital forming an electronic health record (EHR)
+//==== Master case index
+//The emergency care chain is comprised of a great number of heterogeneous systems resulting in siloed data. Looking at combined data of a patient's accident and emergency case, including data of is or her treatment and care plus corresponding outcomes in a comprehensive way across all sectors is difficult. Emergency medical services (EMS) collect rescue data, initial findings and continuous health monitoring data during a patient's transport.
+//A patients medical data is recorded in a hospital forming an electronic health record (EHR)
 
 
 === Vue: components and composables
@@ -53,8 +53,10 @@ In this thesis, Vue provides the structural foundation for implementing a user i
 
 Components lie at the core of Vue, more specifically single file components (SFC).
 A SFC encapsulates a specific part of the user interface, including its visual structure, interactive behavior, and local state.
+For that it is essentially comprised of three parts: the template, script and style.
+Where the template defines the document structure, the script any logic and state and style can be any type of css or derivative of css.
 By decomposing the interface into reusable components, developers can manage complexity and enforce consistent interaction patterns across the application.
-From a human–computer interaction (HCI) perspective, this approach aligns with principles such as consistency, visibility, and predictability, which are essential for reducing cognitive load and supporting rapid information processing @hci_usability_engineering.
+This approach aligns with principles such as consistency, visibility, and predictability, which are essential for reducing cognitive load and supporting rapid information processing @hci_usability_engineering.
 In emergency response systems, where users operate under stress and time pressure, such consistency enables faster recognition of interface elements and more reliable interaction.
 
 Conceptually, a component-based user interface can be understood as a hierarchical structure, where higher-level components compose and coordinate lower-level elements, as illustrated in @component_hierarchy.

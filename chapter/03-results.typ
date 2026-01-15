@@ -2,6 +2,11 @@
 
 == Emergency select page
 This page is only visible if there are more then one registered ISANs received from the Responding System. If there was only one emergency received it will automatically forward to the emergency view page. Otherwise it provides rather big buttons showing the raw ISAN.
+#figure(
+  image("../assets/emergency_select.png"),
+  supplement: [Image],
+  caption: [Screenshot showing the page where all available emergencies will be listed and can be selected.]
+)
 
 == Emergency view page
 This page is the one that is designed as the main page where the user will be.
@@ -25,3 +30,9 @@ Each module tile has two buttons: the maximize button on the top left and the cl
 The close button removes that tile from the dashboard and the maximize button opens the according module page.
 If the page is closed the current tile arrangement will be cached so that once it is reopened the previous arrangement is loaded and displayed.
 In-between those buttons it shows the name of the module this tile belongs to.
+
+#figure(
+  image("../assets/emergency_view.png"),
+  supplement: [Image],
+  caption: [Screenshot of the core page of this project, where all the data for the selected emergency can be viewed.],
+)

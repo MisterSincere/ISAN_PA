@@ -1,3 +1,109 @@
+pointer-events:
+  type: web
+  title: PointerEvent
+  publisher: Mozilla
+  url:
+    value: https://developer.mozilla.org/en-US/docs/Web/API/PointerEvent 
+    date: 2025-12-06
+
+web-interface-design-objective-impact:
+  type: article
+  title: 'How web-interface design impacts task performance, cognitive load, and user experience (UX): An exploration with a cohort of South African university students'
+  author: Gopal, André Delwyn
+  date: 2025-12
+  page-range: 1-22
+  url: https://ajic.wits.ac.za/article/view/23095
+  serial-number:
+    doi: 10.23962/ajic.i36.23095
+  parent:
+    type: periodical
+    title: The African Journal of Information and Communication (AJIC)
+    issue: 36
+
+role-of-information-systems-review:
+  type: article
+  title: The role of information systems in emergency department decision-making-a literature review
+  author:
+  - Born, Cornelius
+  - Schwarz, Romy
+  - Böttcher, Timo
+  - Hein, Andreas
+  - Krcmar, Helmut
+  date: 2024-05
+  page-range: ''
+  serial-number:
+    doi: 10.1093/jamia/ocae096
+  parent:
+    type: periodical
+    title: 'Journal of the American Medical Informatics Association : JAMIA'
+    volume: 31
+
+response-time-matters:
+  type: article
+  title: Do emergency medical system response times matter for health outcomes?
+  author: Wilde, Elizabeth Ty
+  date: 2013-07
+  page-range: 790-806
+  parent:
+    type: periodical
+    title: Health economics
+    publisher: Wiley Online Library
+    issue: 7
+    volume: 22
+
+wcag-situation-impairment:
+  type: web
+  title: Diverse Abilities and Barriers
+  publisher: Web Accesibility Initiative (WAI)
+  date: 2024-06-25
+  url:
+    value: https://www.w3.org/WAI/people-use-web/abilities-barriers/
+    date: 2026-01-14
+
+decision-making-under-stress-01:
+  type: article
+  title: Information overload, stress, and emergency managerial thinking
+  author:
+  - Misra, Shalini
+  - Roberts, Patrick
+  - Rhodes, Matthew
+  date: 2020-12
+  page-range: '101762'
+  url: https://www.sciencedirect.com/science/article/pii/S2212420920312644
+  serial-number:
+    doi: https://doi.org/10.1016/j.ijdrr.2020.101762
+    issn: 2212-4209
+  abstract: We investigate emergency managers' perceptions of information overload from digital sources and examine the relationship of information overload to stress, analytical and intuitive thinking, and managers’ critical thinking disposition. We survey 273 county-level emergency managers from 43 states, and conduct semi-structured interviews with 19 emergency managers to investigate these questions. Above and beyond the effects of age, education, experience, and time spent on emergency managerial work, higher levels of perceived information overload from digital sources were significantly associated with higher levels of perceived stress. Holding the same variables constant, higher levels of perceived stress were linked with lower levels of analytical thinking and higher levels of intuitive thinking. Further, managers who reported higher levels of critical thinking disposition reported lower levels of stress. While we cannot imply causation, our qualitative analysis enriches the survey findings by highlighting problems of digital overload in managerial environments.
+  parent:
+    type: periodical
+    title: International Journal of Disaster Risk Reduction
+    volume: 51
+
+wcag:
+  type: web
+  title: Web Content Accessibility Guidelines (WCAG) 2.1
+  publisher: World Wide Web Consortium (W3C)
+  date: 2025-05-06
+  url:
+    value: https://www.w3.org/TR/WCAG21/
+    date: 2026-01-14
+
+en-301-549:
+  type: web
+  title: Harmonisierte Europäische Norm (EN) 301 549
+  publisher: Der Beauftragte der Bundesregierung für Informationstechnik
+  url:
+    value: https://www.barrierefreiheit-dienstekonsolidierung.bund.de/Webs/PB/DE/gesetze-und-richtlinien/en301549/en301549-node.html
+    date: 2026-01-14
+
+bitv-site:
+  type: web
+  title: Die neue BITV 2.0
+  publisher: Bundesfachstelle Barrierefreiheit
+  url:
+    value: https://www.bundesfachstelle-barrierefreiheit.de/DE/Fachwissen/Informationstechnik/EU-Webseitenrichtlinie/BGG-und-BITV-2-0/Die-neue-BITV-2-0/die-neue-bitv-2-0_node
+    date: 2026-01-14
+
 wcag_contrast:
   type: web
   title: Contrast (Enhanced) (Level AAA)

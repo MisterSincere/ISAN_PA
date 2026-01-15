@@ -11,3 +11,6 @@
 
 === Modular system
 #include("modular-system.typ")
+
+=== Dashboard
+#include("dashboard.typ")
