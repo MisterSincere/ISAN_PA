@@ -35,6 +35,7 @@
     },
     grid(
       columns: (auto, 1fr),
+      rows: 1em,
       inset: ((x: 0.25em), (y: 0.3em)),
       fill: (x, y) => {
         if y+1 == highlight { rgb(252,209,176) }

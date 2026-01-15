@@ -1,16 +1,28 @@
 #import "../utils.typ": *
 
-= Environment
+== Environment and technologies used
 
-Typescript: *type safety*, better maintainability, reducing common errors associated with dynamic typing.
-Sass introduces advanced styling capabilities ensuring scalable styling through reusable design components.
-Vue.js offers great reactivity with a component-based architecture ensuring great modularity.
-As a build tool using Vite accelerates development with fast build and its hot-module reloading, optimized bundling.
+Typescript switches javascripts dynamic and weak typing with a gradual and strong typing system.
+Strong typing can be described like follows by Liskov and Zilles @strong_typing_quote: "whenever an object is passed from a calling function to a called function, its type must be compatible with the type declared in the called function."
+A gradual typing system lies between a dynamic and static typing system.
+In the case of typescript it introduced type annotations:
+#align(center)[`let x: number;`]
+, which result in static type checking.
+But it also allows the following examples:
+#align(center)[
+  `let x: any;`\
+  `let x: number | Car;`]
+That special use-case of a variable being either a number or a `Car` object is hopefully never encountered, but the point is that in these two examples the type needs to be determined during runtime.
+For this typescript uses like javascript the infamous duck test: "If it walks like a duck and it quacks like a duck, then it must be a duck" @duck_quote
+So even though in the end it is still in the hands of the developer to utilize the static typing properties of typescript, it also makes code more readable knowing what the type is; e.g. of an argument passed to a callback you need to implement.
+Additionally while CSS is not possible to workaround when designing web applications, variants like sass introduce syntactic sugar making styling easier and ensuring scalability through reusable design components.
+Vue offers great reactivity with a component-based architecture ensuring great modularity.
+As a build tool using Vite accelerates development by being a very fast build tool with optimized bundling in general while it also provides hot-module reloading which especially accelerates UI development.
 The templating engine of Flask is Jinja good for flexible integration between the python back-end and the local client app.
 
 Back-end relies on Python which is widely adopted and has an extensive ecosystem. Flask offers a minimal yet flexible framework for rapid service development, while Connexion enforces OpenAPI-driven design, enabling automatic validation, documentation and maintainable APIs.
 
-Together, this stack provides strong reactivity for fast reactive visualization on the front end and robust workflows on the back end while enabling well-supported maintenance through comprehensive tooling.
+Together, this stack provides strong reactivity for fast interactive visualizations on the front end and robust workflows on the back end while enabling well-supported maintenance through comprehensive tooling.
 
 #figure(
   table(
@@ -26,7 +38,7 @@ Together, this stack provides strong reactivity for fast reactive visualization 
   caption: [Technology stack],
 ) <techstack>
 
-== Development setup
+=== Development setup
 
 To streamline front-end development, hot reloading is an essential tool. Vite's development server can track changes and reloads the webpage automatically.
 Frameworks like Symfony have integrations and project skeletons for development and production, which configures everything.

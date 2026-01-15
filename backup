@@ -1,0 +1,77 @@
+@inproceedings{haghi2021automatic,
+    title={Automatic information exchange in the early rescue chain using the International Standard Accident Number (ISAN)},
+    author={Haghi, Mostafa and Barakat, Ramon and Spicher, Nicolai and Heinrich, Christian and Jageniak, Justin and {\"O}ktem, Gamze S{\"o}ylev and Krips, Maike and Wang, Ju and Hackel, Siegfried and Deserno, Thomas M},
+    booktitle={Healthcare},
+    volume={9},
+    number={8},
+    pages={996},
+    year={2021},
+    organization={MDPI}
+}
+@incollection{le2019international,
+  title={International Standard Accident Number: a master case index linking accident \& emergency with medical data},
+  author={Le, Hoang Phi and Hackel, Siegfried and Guenther, Andreas and Goldschmidt, Raimar and Daoud, Melhem and Deserno, Thomas M},
+  booktitle={ICT for Health Science Research},
+  pages={120--124},
+  year={2019},
+  publisher={IOS Press}
+}
+@inproceedings{barakat2020automatic,
+  title={Automatic alerting of accidents and emergencies: The international standard accident number and vital sign data embedded in future PACS},
+  author={Barakat, Ramon and Deserno, Thomas M},
+  booktitle={Medical Imaging 2020: Imaging Informatics for Healthcare, Research, and Applications},
+  volume={11318},
+  pages={252--258},
+  year={2020},
+  organization={SPIE}
+}
+@article{spicher2021proposing,
+  title={Proposing an international standard accident number for interconnecting information and communication technology systems of the rescue chain},
+  author={Spicher, Nicolai and Barakat, Ramon and Wang, Ju and Haghi, Mostafa and Jagieniak, Justin and {\"O}ktem, Gamze S{\"o}ylev and Hackel, Siegfried and Deserno, Thomas Martin},
+  journal={Methods of information in medicine},
+  volume={60},
+  number={S 01},
+  pages={e20--e31},
+  year={2021},
+  publisher={Georg Thieme Verlag KG}
+}
+@article{strong_typing_quote_article,
+    author = {Liskov, Barbara and Zilles, Stephen},
+    title = {Programming with abstract data types},
+    year = {1974},
+    issue_date = {April 1974},
+    publisher = {Association for Computing Machinery},
+    address = {New York, NY, USA},
+    volume = {9},
+    number = {4},
+    issn = {0362-1340},
+    url = {https://doi.org/10.1145/942572.807045},
+    doi = {10.1145/942572.807045},
+    abstract = {The motivation behind the work in very-high-level languages is to ease the programming task by providing the programmer with a language containing primitives or abstractions suitable to his problem area. The programmer is then able to spend his effort in the right place; he concentrates on solving his problem, and the resulting program will be more reliable as a result. Clearly, this is a worthwhile goal.Unfortunately, it is very difficult for a designer to select in advance all the abstractions which the users of his language might need. If a language is to be used at all, it is likely to be used to solve problems which its designer did not envision, and for which the abstractions embedded in the language are not sufficient.This paper presents an approach which allows the set of built-in abstractions to be augmented when the need for a new data abstraction is discovered. This approach to the handling of abstraction is an outgrowth of work on designing a language for structured programming. Relevant aspects of this language are described, and examples of the use and definitions of abstractions are given.},
+    journal = {SIGPLAN Not.},
+    month = mar,
+    pages = {50–59},
+    numpages = {10}
+}
+
+@inproceedings{strong_typing_quote,
+    author = {Liskov, Barbara and Zilles, Stephen},
+    title = {Programming with abstract data types},
+    year = {1974},
+    isbn = {9781450378840},
+    publisher = {Association for Computing Machinery},
+    address = {New York, NY, USA},
+    abstract = {The motivation behind the work in very-high-level languages is to ease the programming task by providing the programmer with a language containing primitives or abstractions suitable to his problem area. The programmer is then able to spend his effort in the right place; he concentrates on solving his problem, and the resulting program will be more reliable as a result. Clearly, this is a worthwhile goal.Unfortunately, it is very difficult for a designer to select in advance all the abstractions which the users of his language might need. If a language is to be used at all, it is likely to be used to solve problems which its designer did not envision, and for which the abstractions embedded in the language are not sufficient.This paper presents an approach which allows the set of built-in abstractions to be augmented when the need for a new data abstraction is discovered. This approach to the handling of abstraction is an outgrowth of work on designing a language for structured programming. Relevant aspects of this language are described, and examples of the use and definitions of abstractions are given.},
+    booktitle = {Proceedings of the ACM SIGPLAN Symposium on Very High Level Languages},
+    pages = {50–59},
+    numpages = {10},
+    location = {Santa Monica, California, USA}
+}
+
+@report{duck_quote,
+    author = {Mohammed El Aouri},
+    title = {Duck Typing in JavaScript},
+    issued = {2025-02-23},
+    accessed = {2026-02-12},
+    URL = {https://medium.com/@mohammedelaouri/duck-typing-in-javascript-3122786ddcf7},
+}

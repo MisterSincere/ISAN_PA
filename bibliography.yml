@@ -1,0 +1,164 @@
+wcag_contrast:
+  type: web
+  title: Contrast (Enhanced) (Level AAA)
+  publisher: W3C
+  url:
+    value: https://www.w3.org/WAI/WCAG21/Understanding/contrast-enhanced.html
+    date: 2026-01-13
+
+9241_110_whole:
+  type: web
+  title: "ISO 9241-110:2020(en) Ergonomics of human-system interaction - Part 110: Interaction principles"
+  publisher: International Organization for Standardization (ISO)
+  url:
+    value: https://www.iso.org/obp/ui/#iso:std:iso:9241:-110:ed-2:v1:en
+    date: 2026-01-13
+
+9241_general:
+  type: web
+  title: What Is ISO 9241? A Complete Guide to HCI and Usability Standards
+  author: ALEKVS
+  date: 2025-06-08
+  url:
+    value: https://www.alekvs.com/what-is-iso-9241-a-complete-guide-to-hci-and-usability-standards/
+    date: 2026-01-13
+
+9241_110_essay:
+  type: web
+  title: Die Grundsätze der Dialoggestaltung nach ISO 9241-110
+  author: Kring Friedhelm
+  date: 2025-10-29
+  url:
+    value: https://www.weka-manager-ce.de/betriebsanleitung/grundsaetze-dialoggestaltung-iso-9241-110/
+    date: 2026-01-13
+
+hci_usability_engineering:
+  type: book
+  title: Usability Engineering
+  author: Nielsen, Jakob
+  date: 1994
+  publisher:
+    name: Morgan Kaufmann Publishers Inc.
+    location: San Francisco, CA, USA
+  serial-number:
+    isbn: '9780080520292'
+
+reusable_design_patterns:
+  type: book 
+  title: "Design Patterns: Elements of Reusable Object-Oriented Software"
+  author:
+    - Gamma, Erich
+    - Helm, Richard
+    - Johnson, Ralph
+    - Vlissides, John
+  date: 1995
+  publisher: Addison-Wesley
+
+haghi2021automatic:
+  type: article
+  title: Automatic information exchange in the early rescue chain using the International Standard Accident Number (ISAN)
+  author:
+    - Haghi, Mostafa
+    - Barakat, Ramon
+    - Spicher, Nicolai
+    - Heinrich, Christian
+    - Jageniak, Justin
+    - Öktem, Gamze Söylev
+    - Krips, Maike
+    - Wang, Ju
+    - Hackel, Siegfried
+    - Deserno, Thomas M
+  date: 2021
+  page-range: '996'
+  parent:
+    type: proceedings
+    title: Healthcare
+    organization: MDPI
+    issue: 8
+    volume: 9
+
+le2019international:
+  type: anthos
+  title: 'International Standard Accident Number: a master case index linking accident & emergency with medical data'
+  author:
+    - Le, Hoang Phi
+    - Hackel, Siegfried
+    - Guenther, Andreas
+    - Goldschmidt, Raimar
+    - Daoud, Melhem
+    - Deserno, Thomas M
+  date: 2019
+  page-range: 120-124
+  parent:
+    type: anthology
+    title: ICT for Health Science Research
+    publisher: IOS Press
+
+barakat2020automatic:
+  type: article
+  title: 'Automatic alerting of accidents and emergencies: The international standard accident number and vital sign data embedded in future PACS'
+  author:
+    - Barakat, Ramon
+    - Deserno, Thomas M
+  date: 2020
+  page-range: 252-258
+  parent:
+    type: proceedings
+    title: 'Medical Imaging 2020: Imaging Informatics for Healthcare, Research, and Applications'
+    organization: SPIE
+    volume: 11318
+
+spicher2021proposing:
+  type: article
+  title: Proposing an international standard accident number for interconnecting information and communication technology systems of the rescue chain
+  author:
+    - Spicher, Nicolai
+    - Barakat, Ramon
+    - Wang, Ju
+    - Haghi, Mostafa
+    - Jagieniak, Justin
+    - Öktem, Gamze Söylev
+    - Hackel, Siegfried
+    - Deserno, Thomas Martin
+  date: 2021
+  page-range: e20-e31
+  parent:
+    type: periodical
+    title: Methods of information in medicine
+    publisher: Georg Thieme Verlag KG
+    issue: S1
+    volume: 60
+
+strong_typing_quote:
+  type: article 
+  title: Programming with abstract data types
+  author:
+    - Liskov, Barbara
+    - Zilles, Stephen
+  date: 1974-03-28
+  page-range: 50-59
+  serial-number:
+    isbn: 9781450378840
+  parent:
+    type: proceedings
+    title: Proceedings of the ACM SIGPLAN Symposium on Very High Level Languages
+    publisher:
+      name: Association for Computing Machinery
+      location: Santa Monica, California, USA
+
+duck_quote:
+  type: web
+  title: Duck Typing in JavaScript
+  author: Mohammed El Aouri
+  date: 2025-02-12
+  url:
+    value: https://medium.com/@mohammedelaouri/duck-typing-in-javascript-3122786ddcf7
+    date: 2026-01-12
+
+d4h:
+  type: web
+  title: Uncomplicated Crisis & Emergency Management Software | D4H
+  url:
+    value: https://www.d4h.com/
+    date: 2026-01-13
+

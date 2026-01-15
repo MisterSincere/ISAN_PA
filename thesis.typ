@@ -10,7 +10,18 @@
 )
 #set page(
   numbering: "I",
+  margin: (left: 3cm, top: 3cm, bottom: 2cm, right: 2cm)
 )
+#set text(
+  size: 12pt
+)
+
+#show heading.where(level: 1): set text(size: 16pt)
+#show heading.where(level: 2): set text(size: 14pt)
+#show heading.where(level: 3): set text(size: 12pt)
+#show heading.where(level: 4): set text(size: 12pt, style: "normal")
+#show heading.where(level: 5): set text(size: 12pt)
+#show heading.where(level: 6): set text(size: 12pt)
 
 #titlepage(
   title: international-title,
@@ -39,13 +50,12 @@
 #counter(page).update(1)
 
 #include "chapter/01-introduction.typ"
-#include "chapter/02-environment.typ"
-#include "chapter/03-background.typ"
-#include "chapter/04-architecture.typ"
-#include "chapter/05-design.typ"
-#include "chapter/06-conclusion.typ"
+#include "chapter/02-method.typ"
+#include "chapter/03-results.typ"
+#include "chapter/04-discussion.typ"
+#include "chapter/05-conclusion.typ"
 
-#bibliography("bibliography.bib")
+#bibliography("bibliography.yml", style: "vancouver")
 
 //#include "chapter/98-statutory-declaration.typ"
 //#include "chapter/99-Appendix.typ"

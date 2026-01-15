@@ -1,0 +1,44 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.0.3 Chrome/140.0.7339.249 Electron/38.7.2 Safari/537.36" version="29.0.3">
+  <diagram name="Page-1" id="cACCvXKD9-0Iv1r8frCP">
+    <mxGraphModel dx="825" dy="495" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="g6JnPrqC4lVWyTgy6IC3-1" value="useEmergency()" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="240" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="g6JnPrqC4lVWyTgy6IC3-3" value="Emergency View" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="330" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="g6JnPrqC4lVWyTgy6IC3-4" value="Component" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Ubuntu Mono;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="100" y="318" width="60" height="12" as="geometry" />
+        </mxCell>
+        <mxCell id="g6JnPrqC4lVWyTgy6IC3-5" value="Sidebar Navigation" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="330" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="g6JnPrqC4lVWyTgy6IC3-7" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="g6JnPrqC4lVWyTgy6IC3-3" target="g6JnPrqC4lVWyTgy6IC3-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="160" y="330" as="sourcePoint" />
+            <mxPoint x="390" y="300" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="260" y="345" />
+              <mxPoint x="260" y="290" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="g6JnPrqC4lVWyTgy6IC3-8" value="" style="endArrow=none;html=1;rounded=0;endFill=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="g6JnPrqC4lVWyTgy6IC3-5">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="260" y="330" as="sourcePoint" />
+            <mxPoint x="260" y="345" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="g6JnPrqC4lVWyTgy6IC3-9" value="Component" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Ubuntu Mono;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="300" y="318" width="60" height="12" as="geometry" />
+        </mxCell>
+        <mxCell id="g6JnPrqC4lVWyTgy6IC3-10" value="Composable" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Ubuntu Mono;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="200" y="228" width="60" height="12" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

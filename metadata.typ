@@ -1,6 +1,6 @@
 // Enter your thesis data here:
-#let title = "Desigining a Curing System for the ISAN project"
-#let international-title = "Desigining a Curing System for the ISAN project"
+#let title = "Designing a Modular Web Interface for the ISAN Curing System: Enhancing Information Accessibility in Emergency Situations"
+#let international-title = "Designing a Modular Web Interface for the ISAN Curing System: Enhancing Information Accessibility in Emergency Situations"
 #let document-type = "Project Thesis"
 #let supervisor = "Prof. Dr. Thomas M. Deserno"
 #let advisors = ("Viktor Sobotta",)
