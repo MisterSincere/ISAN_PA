@@ -44,10 +44,9 @@
 ) <top-level-design>
 
 Sidebar and topbar are represented by a Vue component respectively. They will and should always be visible, since they are essential to navigate between visualizations of desired information.
-The dashboard and module view will take most of the screen as they will show the emergency information.
-The module view is supposed to be as generic as possible to integrate different kind of projects. This way extending functionality at a later point should not result in rewriting the code base of this project.
+The dashboard and module view will take most of the screen as they will show the important emergency information.
 
-=== Colors and contrast
+=== Color contrast design  <color-contrast>
 Defining colors throughout even a medium-sized application can result in a mess of same purpose colors defined at multiple locations in code resulting difficult maintainability and even inconsistent colors.
 A central file defining the color scheme ensures maintainability and scalability.
 If desired a different theme could be added, through a media query for dark themes for example, just in this file replacing the values for the same variables; no further changes needed.
@@ -55,47 +54,35 @@ In this thesis the file `colors.scss` (see @color-file) defines all the used col
 
 #figure(
   code(
-"$black-0: #212529;
-$black-1: #2b3035;
-
-$grey-0: #343a40;
-$grey-1: #444a50;
-
-$white-0: #e2e2e6;
-
-$green: #080;
+"$black-0:     #212529;
+$black-1:      #2b3035;
+$grey-0:       #343a40;
+$grey-1:       #444a50;
+$white-0:      #e2e2e6;
+$green:        #080;
 $green-darker: #060;
-$red: #CC1213;
-
-$tile-bg: #222;
-
-$acc-0: #ffa500;
-$acc-1: #cf7500;
-
+$red:          #CC1213;
+$tile-bg:      #222;
+$acc-0:        #ffa500;
+$acc-1:        #cf7500;
 
 :root {
-  --body-bg: #{$black-0};
-
-  --text-color: #{$white-0};
-
-  --sidebar-bg: #{$black-1};
-  --sidebar-color: #{$white-0};
-  --sidebar-btn-hover: #{$grey-0};
-  --sidebar-btn-active: #{$grey-1};
-
+  --body-bg:                #{$black-0};
+  --text-color:             #{$white-0};
+  --sidebar-bg:             #{$black-1};
+  --sidebar-color:          #{$white-0};
+  --sidebar-btn-hover:      #{$grey-0};
+  --sidebar-btn-active:     #{$grey-1};
   --content-view-header-bg: #{$black-1};
-  --content-view-bg: #{$black-0};
-  --dropzone: #{$green-darker};
-
-  --tile-border: #{$green-darker};
-  --tile-btn-hover: #{$green-darker};
-  --tile-bg: #{$tile-bg};
-
-  --warn: #{$red};
-
-  --acc: #{$acc-0};
-  --acc-secondary: #{$acc-1};
-  --acc-foreground: #{$black-0};
+  --content-view-bg:        #{$black-0};
+  --dropzone:               #{$green-darker};
+  --tile-border:            #{$green-darker};
+  --tile-btn-hover:         #{$green-darker};
+  --tile-bg:                #{$tile-bg};
+  --warn:                   #{$red};
+  --acc:                    #{$acc-0};
+  --acc-secondary:          #{$acc-1};
+  --acc-foreground:         #{$black-0};
 }
 ",
   "scss",
@@ -106,8 +93,7 @@ $acc-1: #cf7500;
 ) <color-file>
 
 What follows is a contrast analysis of those colors that overlap and contrast is needed to provide important information.
-The suggested contrast ratio by WCAG 2.1 Level AAA for text is 7:1 @wcag_contrast.
-Contrast ratio is defined as:
+WCAG 2.1 defines contrast ratio as follows:
 #align(
   center
 )[$frac(L_1 + 0.5, L_2 + 0.5, style: "horizontal")op(", ") L_1 > L_2$]

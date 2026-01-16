@@ -1,3 +1,31 @@
+finger-width:
+  type: article
+  title: Investigating Normative Measurements of the Thumb and Index Finger to Aid in Reconstructive Surgery
+  author:
+  - Boike, Sydney
+  - Baker, Mikayla J
+  - Ray, Lucas
+  - Odenthal, Ali
+  - Bohn, Deb
+  - Van Heest, Ann
+  date: 2025-07-23
+  page-range: '100792'
+  parent:
+    type: periodical
+    title: Journal of Hand Surgery Global Online
+    publisher: Elsevier
+    issue: 5
+    volume: 7
+
+
+nida-pad:
+  type: web
+  title: NIDApad
+  publisher: medDV GmbH
+  url:
+    value: https://www.meddv.de/nidapad/
+    date: 2025-12-14
+
 pointer-events:
   type: web
   title: PointerEvent

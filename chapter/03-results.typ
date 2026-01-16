@@ -1,7 +1,7 @@
 = Results
 
 == Emergency select page
-This page is only visible if there are more then one registered ISANs received from the Responding System. If there was only one emergency received it will automatically forward to the emergency view page. Otherwise it provides rather big buttons showing the raw ISAN.
+This page is only visible if there are more than one registered ISANs received from the responding system. If there was only one emergency received it will automatically forward to the emergency view page of that emergency. Otherwise it provides rather big buttons showing the raw ISAN.
 #figure(
   image("../assets/emergency_select.png"),
   supplement: [Image],
