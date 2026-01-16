@@ -5,6 +5,10 @@
 #let nh(text) = margin-note(stroke: green, text)
 #let vs(text) = margin-note(stroke: blue, text)
 
+#let success = rgb("#89f970")
+#let partial = rgb("#f9e570")
+#let failure = rgb("#f97070")
+
 #let code(
   code,
   language,

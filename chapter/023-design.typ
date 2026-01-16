@@ -89,7 +89,7 @@ $acc-1:        #cf7500;
   path: "@css/colors.scss"
   ),
   supplement: [Code],
-  caption: [Central scss file defining color variables used throughout the website.]
+  caption: [Central scss file defining color variables used throughout the website.],
 ) <color-file>
 
 What follows is a contrast analysis of those colors that overlap and contrast is needed to provide important information.

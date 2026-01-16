@@ -1,7 +1,7 @@
 #import "@preview/cetz:0.4.2"
 #import "../utils.typ": *
 
-== Architecture
+== Implementation
 
 === General architecture
 #include("general-architecture.typ")

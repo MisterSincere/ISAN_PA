@@ -20,8 +20,6 @@
 #show heading.where(level: 2): set text(size: 14pt)
 #show heading.where(level: 3): set text(size: 12pt)
 #show heading.where(level: 4): set text(size: 12pt, style: "normal")
-#show heading.where(level: 5): set text(size: 12pt)
-#show heading.where(level: 6): set text(size: 12pt)
 
 #titlepage(
   title: international-title,
@@ -44,7 +42,7 @@
 
 #outline(depth: 2)
 
-#note-outline()
+//#note-outline()
 
 #set page(numbering: "1")
 #counter(page).update(1)

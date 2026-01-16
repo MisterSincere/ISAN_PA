@@ -6,14 +6,16 @@ Typescript switches javascripts dynamic and weak typing with a gradual and stron
 Strong typing can be described like follows by Liskov and Zilles @strong_typing_quote: "whenever an object is passed from a calling function to a called function, its type must be compatible with the type declared in the called function."
 A gradual typing system lies between a dynamic and static typing system.
 In the case of typescript it introduced type annotations:
-#align(center)[`let x: number;`]
+```typescript
+let x: number;
+```
 , which result in static type checking.
 But it also allows the following examples:
-#align(center)[
-  `let x: any;`\
-  `let x: number | Car;`]
+```typescript
+let x: any;
+let x: number | Car;```
 That special use-case of a variable being either a number or a `Car` object is hopefully never encountered, but the point is that in these two examples the type needs to be determined during runtime.
-For this typescript uses like javascript the infamous duck test: "If it walks like a duck and it quacks like a duck, then it must be a duck" @duck_quote
+For this, typescript uses, like javascript, the infamous duck test: "If it walks like a duck and it quacks like a duck, then it must be a duck" @duck_quote.
 So even though in the end it is still in the hands of the developer to utilize the static typing properties of typescript, it also makes code more readable knowing what the type is; e.g. of an argument passed to a callback you need to implement.
 Additionally while CSS is not possible to workaround when designing web applications, variants like sass introduce syntactic sugar making styling easier and ensuring scalability through reusable design components.
 Vue offers great reactivity with a component-based architecture ensuring great modularity.

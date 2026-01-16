@@ -68,13 +68,12 @@ Conceptually, a component-based user interface can be understood as a hierarchic
 
 While components structure the user interface, Vue further supports the separation of concerns through the use of composables.
 Composables are reusable functions that encapsulate stateful logic and can be shared across multiple components.
-Introduced as part of Vue’s Composition API, this concept reflects broader software engineering principles such as separation of concerns and functional abstraction (Parnas, 1972).
+Introduced as part of Vue’s Composition API, this concept reflects broader software engineering principles such as separation of concerns and functional abstraction.
 Composables allow application logic—such as data retrieval, state synchronization, or domain-specific behavior—to be implemented independently of the visual representation.
 
 From an HCI-oriented software engineering perspective, composables contribute indirectly but significantly to usability.
 By externalizing complex logic from UI components, composables enable components to remain focused on presentation and interaction.
-This clearer separation supports a closer alignment between the system’s internal structure and the user’s mental model of the interface, an important factor for usability in safety-critical systems (Norman, 2013).
-Additionally, shared composables ensure consistent handling of cross-cutting concerns—such as incident context or standardized identifiers—across the interface, supporting coherent situational awareness.
+This clearer separation supports a closer alignment between the system’s internal structure and the user’s mental model of the interface, an important factor for usability in safety-critical systems.
 
 The relationship between components and composables can be visualized as shown in @composable_example, where multiple components rely on shared composables for logic and state.
 #figure(
