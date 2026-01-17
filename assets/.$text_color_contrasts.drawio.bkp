@@ -50,10 +50,10 @@
           <mxGeometry x="410" y="280" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="TymEuy5HLikG0qenc-9B-41" value="--acc-foreground:" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;strokeWidth=1;fontFamily=Ubuntu Light;spacing=3;align=left;" vertex="1" parent="1">
-          <mxGeometry x="70" y="310" width="100" height="30" as="geometry" />
+          <mxGeometry x="60" y="310" width="110" height="30" as="geometry" />
         </mxCell>
         <mxCell id="TymEuy5HLikG0qenc-9B-42" value="--text-color:" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;strokeWidth=1;fontFamily=Ubuntu Light;spacing=3;align=left;" vertex="1" parent="1">
-          <mxGeometry x="70" y="280" width="100" height="30" as="geometry" />
+          <mxGeometry x="60" y="280" width="110" height="30" as="geometry" />
         </mxCell>
         <mxCell id="TymEuy5HLikG0qenc-9B-44" value="0" style="shape=manualInput;whiteSpace=wrap;html=1;size=80;strokeColor=none;fillColor=light-dark(#212529,#212529);flipV=0;flipH=1;fontFamily=Ubuntu Light;fontSize=10;verticalAlign=bottom;align=left;spacing=0;spacingTop=-3;spacingLeft=3;fontColor=#FFFFFF;" vertex="1" parent="1">
           <mxGeometry x="170" y="310" width="60" height="30" as="geometry" />

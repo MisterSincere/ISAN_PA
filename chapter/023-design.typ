@@ -66,6 +66,7 @@ $red:          #CC1213;
 $tile-bg:      #222;
 $acc-0:        #ffa500;
 $acc-1:        #cf7500;
+$acc-blue:     #0d2edd;
 
 :root {
   --body-bg:                #{$black-0};
@@ -84,6 +85,7 @@ $acc-1:        #cf7500;
   --acc:                    #{$acc-0};
   --acc-secondary:          #{$acc-1};
   --acc-foreground:         #{$black-0};
+  --acc-alt:                #{$acc-blue};
 }
 ",
   "scss",
@@ -111,9 +113,11 @@ Each of the channels $R, G, B$ in this formula are computed by taking the origin
 ]
 The important color variables used for text are `--text-color` and `--acc-foreground`. Both of them need to be compared to the background colors they are displayed on. As the css-style variables are purpose-named and hence would result in redundant comparisons the contrast ratio is computed relative to the color values that are used for background purposes.
 
-
 #figure(
   image("../assets/text_color_contrasts.drawio.svg"),
   caption: [Table of color contrast ratios. The rows are color variables used for foreground / text, while the columns represent the color values used as a background throughout the website.],
 ) <text-color-contrasts>
+
+According to these contrasts, some color choices have been avoided.
+The `--acc-foreground` has been for example added to avoid the weak contrast of the normal text color on any accentuated background.
 
