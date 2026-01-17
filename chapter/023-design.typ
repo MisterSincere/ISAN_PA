@@ -43,7 +43,8 @@
   caption: [Top Level Design]
 ) <top-level-design>
 
-Sidebar and topbar are represented by a Vue component respectively. They will and should always be visible, since they are essential to navigate between visualizations of desired information.
+Sidebar and topbar are represented by a Vue component respectively.
+They will and should always be visible, since they are essential to navigate between visualizations of desired information.
 The dashboard and module view will take most of the screen as they will show the important emergency information.
 
 === Color contrast design  <color-contrast>

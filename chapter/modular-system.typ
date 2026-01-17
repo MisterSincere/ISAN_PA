@@ -66,14 +66,14 @@ Instead @module-container-template just shows the `template` implementation of t
   caption: [The template part of the module container SFC.],
 ) <module-container-template>
 
-Most important here is the vue-specific `component` element (see @module-container-template, line 8), which will be whatever component is set to the `:is` property.
+Most important here is Vue's `component` element (see @module-container-template, line 8), which will be whatever component is set to the `:is` property.
 So once the SFC representing the desired module is loaded, `handle.component` will be set and the `component` element can be shown as indicated by the condition in `v-if`.
 
 Most of the loading logic is put away in the `module_loader.ts` composable.
 The component itself only manages the rendering according to what `DataLoadState` and `ComponentLoadState` has been set.
-The `module_loader.ts` implements a `load_module` method for importing/loading the vue component file and for fetching the according module data separately if desired.
-Moreover the vue component and module data are cached.
-While the vue component is a static asset and will not change during a client session, the module data can get outdated and if defined by the previously discussed property `refresh_interval_ms` will be refreshed.
+The `module_loader.ts` implements a `load_module` method for importing/loading the Vue component file and for fetching the according module data separately if desired.
+Moreover the Vue component and module data are cached.
+While the Vue component is a static asset and will not change during a client session, the module data can get outdated and if defined by the previously discussed property `refresh_interval_ms` will be refreshed.
 
 To determine what module is currently desired the `ModuleContainer.vue` will determine the module name and type from the current route parameter `moduleKey`.
 The container will then try to import the correct module, which is after successful loading set to the `component` object.
@@ -101,7 +101,7 @@ Adding a module might include the following files:
   )
 )
 
-The vue file is needed, because the `ModuleContainer.vue` tries to load this file, since it is the main entry point to render a module type.
+The Vue file is needed, because the `ModuleContainer.vue` tries to load this file, since it is the main entry point to render a module type.
 Hence it is necessary to point the front end to that file for a specific module type.
 For that the back end has a global variable `registered_modules`, which can be expanded by a `ModuleType` as follows:
 #align(center)[

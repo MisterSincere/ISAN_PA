@@ -13,7 +13,7 @@ This page is the one that is designed as the main page where the user will be.
 On the top is a menu with an orange background, which on the left side shows a reduced version of the currently selected ISAN only showing date, time and location and on the right shows weather data for according emergency location.
 The current (reduced) ISAN can be clicked to show a dropdown with all known current emergencies.
 
-While the top bar provides more meta information, the left bar provides navigation regarding the selected emergency.
+While the top bar provides more meta information, the left side bar provides navigation within information regarding the selected emergency.
 Therefore it shows all available modules, meaning modules for which data has been received and modules for received data which have a module front end definition.
 When entering the page, the list only shows big icons of each module, but it can be expanded to also show the module name.
 To open a module the according icon or module name can be clicked. 
@@ -21,7 +21,7 @@ Opening a module will show its representation in the main area at the center of 
 Moreover the current opened module (or dashboard) will have a different background indicating the current location.
 No module will be opened automatically. Instead an empty dashboard (if the page is visited the first time) is shown.
 
-The dashboard has its own top bar with the headline "Dashboard" and a big button on the right, which opens a dropdown to add or remove (indicated by the checkbox) a module to the dashboard as a tile.
+The dashboard has its own top bar with the headline "Dashboard" and a big button on the right, which opens a dropdown to add or remove (indicated by the checkbox next to it) a module to the dashboard as a tile.
 Furthermore the dashboard shows green zones. Those green zones are dropzones. While not automatically when added to the dashboard, a module tile will snap to the according zone when dropped onto.
 The initial dropzones only allow to split for half of the screen and not a quarter.
 For that a tile can be dropped onto another tile that is already pinned to one of the dropzones: if done in the middle of that tile it will be replaced, but if done left or right for vertical splitting or top or bottom for horizontal splitting it will split the previous tile in half and place the dragged one accordingly to the location it was dragged to.
