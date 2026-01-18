@@ -1,3 +1,10 @@
+jakobs-law:
+  type: web
+  title: Jakob's Law
+  url:
+    value: https://lawsofux.com/jakobs-law/
+    date: 2026-01-18
+
 finger-width:
   type: article
   title: Investigating Normative Measurements of the Thumb and Index Finger to Aid in Reconstructive Surgery

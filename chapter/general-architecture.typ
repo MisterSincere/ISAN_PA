@@ -2,7 +2,7 @@
 #import "../utils.typ": *
 
 In general there are two different ways to approach this: via back end or front end rendering.
-Typically rendering is better handled in the front end, our browsers are well-optimized for that today (WebGL, WebGPU).
+Typically rendering is better handled on the front end, our browsers are well-optimized for that today (WebGL, WebGPU).
 Moreover the reactivity is important on the front end anyways.
 So reactivity handled by back-end rendering means the back-end needs to send and re-render the whole page again and again.
 Frameworks like Vue are optimized updating only the important changed reactive parts of a website.

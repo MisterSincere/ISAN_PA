@@ -4,10 +4,25 @@
 == Design
 
 === Top Level Design
+The general goal of the interface design is to create a simple structure aligning with familiar interaction patterns following Jakob's Law that states:
+#align(center)[
+_"Users spend most of their time on other sites."_ @jakobs-law
+]
+In other words users will transfer knowledge of how to interact with software from other websites trying to apply it.
+A menu design appearing in the bottom right as a floating menu with animations might have clever and thoughtful ideas but raises the need to learn specifically those ideas.
+Instead more familiar locations of navigation bars at least in the western hemisphere are at the top or the left side of the screen.
+Moreover sidebar menus can often toggle between an expanded, more detailed view and a view showing less information but occupying less screen space.
 
-- fairly simple
-- sidebar: for modules (and dashboard?)
-- topbar: emergency selection (and dashboard?)
+At the highest level, the application is split into two major views: the _emergency selection page_ and the _emergency view page_.
+If only a single emergency is available, the selection page is redundant and bypassed entirely forwarding to the corresponding emergency view.
+When multiple emergencies are available, the selection page presents the ISAN's of each emergency in a simple list.
+
+The emergency view page forms the core of the interface since it is the primary workspace.
+When entering this view, an initially empty dashboard is displayed.
+This dashboard serves as the central canvas for arranging modular information tiles related to the selected emergency.
+The main content area, which is used for the dashboard and individual module views alike, occupies the majority of the screen's real estate.
+To support consistent orientation and uninterrupted navigation the topbar and sidebar remain persistently visible (see @top-level-design).
+The dashboard, module view, topbar and sidebar are each implemented as a dedicated Vue component.
 
 #figure(
   cetz.canvas({
@@ -40,12 +55,29 @@
       [Dashboard/Module View]
     )
   }),
-  caption: [Top Level Design]
+  caption: [Emergency view page top level design]
 ) <top-level-design>
 
-Sidebar and topbar are represented by a Vue component respectively.
-They will and should always be visible, since they are essential to navigate between visualizations of desired information.
-The dashboard and module view will take most of the screen as they will show the important emergency information.
+The topbar provides quick access to meta-information.
+It displays a reduced representation of the currently selected ISAN, while allowing to switch to other emergencies listed in a dropdown upon clicking the current ISAN.
+Additionally general weather information has been added to the right of the topbar.
+
+The sidebar provides navigation within the emergency view.
+It lists all available modules and a dedicated entry for returning to the dashboard.
+To preserve screen space, the sidebar initially shows only icons representing each available module.
+Users may expand it via a "burger menu" button to reveal the module names.
+Each module can define its own icon.
+
+The dashboard is designed to offer high flexibility while making it easy to maintain order with a lot of information present.
+Users can add any module as a tile, with each tile being movable and resizable.
+Tiles may be removed either through a dedicated button or by dragging them into a designated remove zone.
+Clicking a tile brings it to the foreground, which is especially important when floating tiles overlap.
+
+Freely floating tiles can easily overlap and result in cluttered layouts.
+To prevent this a system of dropzones is introduced additionally.
+These dropzones represent designated regions on the dashboard where tiles can snap into structures positions.
+They enable users to quickly create clean layouts with up to four modules being placed side by side each taking a quadrant of available space.
+If a tile is dragged onto the center of another attached tile, it can replace the existing one, or divide it either vertically or horizontally, when dropped onto one of the directional splitting zones.
 
 === Color contrast design  <color-contrast>
 Defining colors throughout even a medium-sized application can result in a mess of same purpose colors defined at multiple locations in code resulting difficult maintainability and even inconsistent colors.

@@ -39,8 +39,9 @@
 #counter(page).update(2)
 
 #include "chapter/abstract.typ"
+#pagebreak()
 
-#outline(depth: 2)
+#outline(depth: 3)
 
 //#note-outline()
 
