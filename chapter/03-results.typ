@@ -1,6 +1,6 @@
 = Results
 
-== Emergency select page
+== Emergency Select Page
 This page is only visible if there are more than one registered ISANs received from the responding system. If there was only one emergency received it will automatically forward to the emergency view page of that emergency. Otherwise it provides rather big buttons showing the raw ISAN.
 #figure(
   image("../assets/emergency_select.png"),
@@ -8,7 +8,7 @@ This page is only visible if there are more than one registered ISANs received f
   caption: [Screenshot showing the page where all available emergencies will be listed and can be selected.]
 )
 
-== Emergency view page
+== Emergency View Page
 This page is the one that is designed as the main page where the user will be.
 On the top is a menu with an orange background, which on the left side shows a reduced version of the currently selected ISAN only showing date, time and location and on the right shows weather data for according emergency location.
 The current (reduced) ISAN can be clicked to show a dropdown with all known current emergencies.

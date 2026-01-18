@@ -3,10 +3,10 @@
 
 == Implementation
 
-=== General architecture
+=== General Architecture
 #include("general-architecture.typ")
 
-=== Front end - back end communication
+=== Front end - Back end Communication
 #include("frontend-backend-communication.typ")
 
 === Modular system

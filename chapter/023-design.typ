@@ -79,7 +79,7 @@ These dropzones represent designated regions on the dashboard where tiles can sn
 They enable users to quickly create clean layouts with up to four modules being placed side by side each taking a quadrant of available space.
 If a tile is dragged onto the center of another attached tile, it can replace the existing one, or divide it either vertically or horizontally, when dropped onto one of the directional splitting zones.
 
-=== Color contrast design  <color-contrast>
+=== Color Design <color-contrast>
 Defining colors throughout even a medium-sized application can result in a mess of same purpose colors defined at multiple locations in code resulting difficult maintainability and even inconsistent colors.
 A central file defining the color scheme ensures maintainability and scalability.
 If desired a different theme could be added, through a media query for dark themes for example, just in this file replacing the values for the same variables; no further changes needed.

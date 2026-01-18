@@ -22,7 +22,7 @@ The following properties can be defined on the scope of a module instance or the
   )
 ]
 
-==== Module container
+==== Module Container
 The whole implementation of the `ModuleContainer.vue` is too big to include it here.
 The heart of it is the `module_loader.ts` which implements the asynchronous loading process and spans over 150 lines.
 Instead @module-container-template just shows the `template` implementation of the `ModuleContainer.vue`, which demonstrates what is shown at what state of loading.
@@ -79,7 +79,7 @@ To determine what module is currently desired the `ModuleContainer.vue` will det
 The container will then try to import the correct module, which is after successful loading set to the `component` object.
 If data has been requested and received it gets automatically passed into the component via a conditional `v-bind`.
 
-==== Defining a module
+==== Defining a Module
 Adding a module might include the following files:
 #figure(
   table(

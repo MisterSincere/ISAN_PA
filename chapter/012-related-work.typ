@@ -1,8 +1,8 @@
 #import "../utils.typ": *
 
-== Related work
+== Related Work
 
-=== Design standards and accessibility in interactive software
+=== Design Standards and Accessibility in Interactive Software
 The design of interactive systems, especially in safety-critical domains such as emergency response, is guided by international standards that aim to ensure usability, accessibility, and reliability in general.
 In the context of human–computer interaction, these standards provide a shared framework for evaluating and designing user interfaces that support effective human performance under diverse conditions.
 
@@ -27,7 +27,7 @@ Existing standards thus establish an important foundation for usability and acce
 The need to prioritize critical information, support rapid situation assessment, and minimize cognitive load requires design decisions that go beyond general-purpose standards.
 Consequently, this thesis builds upon established usability and accessibility guidelines, implementing and adapting  them within the context of an emergency-focused web application interface.
 
-=== Existing emergency response software
+=== Existing Emergency Response Software
 A number of software systems have been developed to support emergency response operations by aggregating incident-related information and assisting coordination.
 Analyzing such systems provides insight into established design patterns, interaction paradigms, and functional priorities within the domain.
 

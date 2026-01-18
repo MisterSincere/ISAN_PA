@@ -3,7 +3,7 @@
 
 For communication between the front end and back end data two different types are needed: static data and dynamic data.
 It is important to differentiate for each information what its scope is.
-==== Static data
+==== Static Data
 Static data represents information that is loaded once per initial request of the page.
 Without any user specific interaction the back end embeds data into the HTML via Jinja's rendering like follows:
 #align(center)[
@@ -103,7 +103,7 @@ Almost at every point on the front end this data can be expected to be available
 Therefore it represents critical data that is needed for basic functionality.
 For this project this means the app needs to know what emergencies exist and what modules it can show for each one.
 
-==== Dynamic data
+==== Dynamic Data
 In contrast dynamic data is only required after certain user interactions.
 In this case for example once a module is requested to be loaded by the user, the `ModuleContainer` will check whether the module type is defined to request dynamic data from the back end.
 @module-workflow visualizes what routes lead to what type of data being send to the front end.

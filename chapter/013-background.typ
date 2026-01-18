@@ -2,7 +2,7 @@
 
 == Background
 
-=== The ISAN project
+=== The ISAN Project
 This thesis is build on the International Standard Accident Number (ISAN) project by the Peter L. Reichertz Institute (PLRI) of Braunschweig and Hannover.
 
 The rescue chain is typically comprised of three different information and communication technology (ICT) systems: a curing system, responding system and an alerting system.
@@ -17,7 +17,7 @@ The ISAN functions as a shared unique identifier linking distributed systems wit
 2. ensure interoperability across isolated ICT systems operated by different organizations, vendors and even countries.
 This proposed unique identifier aims to work with a multiplicity of different scenarios and hardware @spicher2021proposing.
 
-==== Structure of the ISAN
+==== ISAN Structure
 The ISAN embeds accident metadata and a unique identifier directly into a compact string following the fixed-order paradigm. The metadata consists of:
 1. time + uncertainty
 2. location + uncertainty
@@ -45,7 +45,7 @@ This results in a total of seven fields, each following the tag-value paradigm. 
 //A patients medical data is recorded in a hospital forming an electronic health record (EHR)
 
 
-=== Vue: components and composables
+=== Vue: Components and Composables
 Modern web-based user interfaces are  more and more commonly developed using component-based frameworks, which support the construction of complex interfaces through the composition of smaller, self-contained units.
 Component-based UI development has been widely adopted due to its benefits for modularity, maintainability, and consistency @reusable_design_patterns.
 Vue is a JavaScript framework that follows this paradigm and is particularly suited for developing interactive, state-driven web applications with re-usability and scalability in mind.

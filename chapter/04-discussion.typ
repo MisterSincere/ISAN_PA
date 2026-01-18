@@ -6,13 +6,13 @@ The implementation and design process already happened planning to meet certain 
 This chapter recalls some of these procedures for contrast ratio of texts and discusses their results and investigates further guidelines of the WCAG 2.1 for target area sizes.
 Additionally small navigation details that have been thought of are mentioned and brought into context.
 
-== Target area sizes
+== Target Area Sizes
 #include("target-area-size-discussion.typ")
 
-== Text contrast
+== Text Contrast
 #include("text-contrast-discussion.typ")
 
-== General design choices 
+== General Design Choices 
 In general the application has been designed to make it easy for users to move between emergencies and other interface elements like different module pages.
 On the _emergency selection page_, users are forwarded directly if only one emergency is available.
 When multiple emergencies exist, each one is shown as a button containing the raw ISAN to not artificially hide any information.

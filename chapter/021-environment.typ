@@ -1,6 +1,6 @@
 #import "../utils.typ": *
 
-== Environment and technologies used
+== Environment and Technologies Used
 
 Typescript switches javascripts dynamic and weak typing with a gradual and strong typing system.
 Strong typing can be described like follows by Liskov and Zilles @strong_typing_quote: "whenever an object is passed from a calling function to a called function, its type must be compatible with the type declared in the called function."
@@ -40,7 +40,7 @@ Together, this stack provides strong reactivity for fast interactive visualizati
   caption: [Technology stack],
 ) <techstack>
 
-=== Development setup
+=== Development Setup
 
 To streamline front-end development, hot reloading is an essential tool. Vite's development server can track changes and reloads the webpage automatically.
 Frameworks like Symfony have integrations and project skeletons for development and production, which configures everything.
