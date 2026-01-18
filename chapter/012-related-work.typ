@@ -71,9 +71,6 @@ The global reach of D4H also highlights the importance of flexible localization 
 In emergency contexts where users operate under stress, cognitive load, or adverse environmental conditions, interface clarity, consistency, and predictability are crucial.
 D4H’s design exemplifies how large-scale emergency software can implement these principles at both operational and strategic levels.
 
-In summary, D4H complements the other examined systems by demonstrating how modularity, role-based access, and configurability can be integrated into globally adopted emergency management software.
-Its design provides additional insights into balancing flexibility, usability, and cognitive efficiency in complex, real-time systems—principles that inform the design of the curing system interface developed in this thesis.
-
 //*rescueTABLET:*
 //- over 750 organisations in germany
 //- dashboard, sidebar menu, tiles
