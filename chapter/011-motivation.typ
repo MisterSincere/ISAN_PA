@@ -22,5 +22,6 @@ Emergency responders are often required to consult multiple systems to obtain a 
 Such interaction patterns conflict with fundamental HCI principles, including the reduction of cognitive load and the prioritization of critical information.
 
 This thesis addresses these challenges by designing and implementing a user-centered curing system web interface that consolidates incident-related data from multiple sources into a single web application.
+It follows a component-based architecture built with Vue and TypeScript on the front end and a Python/Flask back end, applying established software engineering principles.
 By leveraging standardized identifiers such as ISAN and applying accessibility requirements, the system aims to support faster, intuitive and more informed decision-making.
 Ultimately, this work seeks to develop a thoughtful web-interface design that can contribute to more effective emergency response, while laying a foundation for easily adding critical information without the need to re-iterate accessibility patterns and their implementation from a systematic point of view.
