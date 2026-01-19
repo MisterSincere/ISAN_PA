@@ -1,3 +1,148 @@
+local-storage-web:
+  type: web
+  title: "Window: localStorage property"
+  url:
+    value: https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage
+    date: 2026-01-19
+
+code-redundancy-bad:
+  type: web
+  title: "Eliminating Code Redundancy: Boosting Efficiency and Simplifying Development"
+  author: Hasan, Mahmudul
+  date: 2023-06-06
+  url:
+    value: https://medium.com/@mhkrana28/eliminating-code-redundancy-boosting-efficiency-and-simplifying-development-d93c71ef3e00
+    date: 2026-01-19
+
+response-times:
+  type: web
+  title: "Response Time Limits: Article by Jakob Nielsen - NN/G"
+  author: Nielsen, Jakob
+  url:
+    value: https://www.nngroup.com/articles/response-times-3-important-limits/
+    date: 2026-01-19
+
+zod-web:
+  type: web
+  title: Intro | Zod
+  url:
+    value: https://zod.dev/
+    date: 2026-01-19
+
+semantic-colors:
+  type: web
+  title: Semantic Colors in UI/UX Design. A beginner’s Guide to Functional Color Systems
+  author: Asri, Zaim
+  date: 2025-04-16
+  url:
+    value: https://medium.com/@zaimasri92/semantic-colors-in-ui-ux-design-a-beginners-guide-to-functional-color-systems-cc51cf79ac5a
+    date: 2026-01-19
+
+same-origin-policy:
+  type: web
+  title: "Same-origin policy - Security | MDN"
+  organisation: MDN
+  url:
+    value: https://developer.mozilla.org/en-US/docs/Web/Security/Defenses/Same-origin_policy
+    date: 2026-01-19
+
+flask-vite-web:
+  type: web
+  title: "flask-vite · PyPI"
+  url:
+    value: https://pypi.org/project/flask-vite/
+    date: 2026-01-19
+
+connexion-web:
+  type: web
+  title: Welcome to Connexion’s documentation! — Connexion 3.0.dev0 documentation
+  url:
+    value: https://connexion.readthedocs.io/en/stable/
+    date: 2026-01-19
+
+vue-web:
+  type: web
+  title: Vue.js - The Progressive JavaScript Framework | Vue.js
+  url:
+    value: https://vuejs.org/
+    date: 2026-01-19
+
+python-web:
+  type: web
+  title: Welcome to Python.org
+  url:
+    value: https://www.python.org/
+    date: 2026-01-19
+
+jinja-web:
+  type: web
+  title: Jinja — Jinja Documentation (3.1.x)
+  url:
+    value: https://jinja.palletsprojects.com/en/stable/
+    date: 2026-01-19
+    
+flask-web:
+  type: web
+  title: Welcome to Flask — Flask Documentation (3.1.x)
+  url:
+    value: https://flask.palletsprojects.com/en/stable/
+    date: 2026-01-19
+
+vite-github:
+  type: web
+  title: "vitejs/vite: Next generation frontend tooling. It's fast!"
+  url:
+    value: https://github.com/vitejs/vite
+    date: 2026-01-19
+
+sass-web:
+  type: web
+  title: "Sass: Syntactically Awesome Style Sheets"
+  organisation: Sass
+  url:
+    value: https://sass-lang.com/
+    date: 2026-01-19
+
+typescript-web:
+  type: web
+  title: "TypeScript: JavaScript With Syntax For Types."
+  organisation: Microsoft
+  url:
+    value: https://www.typescriptlang.org/
+    date: 2026-01-15
+
+d4h-g2-winner:
+  type: web
+  title: D4H Sweeps G2 Winter Awards
+  organisation: D4H Technologies
+  url:
+    value: https://www.d4h.com/blog/d4h-sweeps-g2-winter-awards
+    date: 2026-01-19
+
+tablet-command-advantages:
+  type: web
+  title: 10 Operational Advantages of Tablet Command in the Field
+  organisation: Tablet Command Inc.
+  url: 
+    value: https://www.tabletcommand.com/blog/10-operational-advantages-of-tablet-command-in-the-field
+    date: 2026-01-19
+
+tablet-command-overview:
+  type: web
+  title: TC - Overview
+  organisation: Tablet Command Inc.
+  url:
+    value: https://www.tabletcommand.com/90-second-overview?hsCtaTracking=a3349186-d795-45ea-b390-a60fdf5d367c%7C3662ca26-a649-4c82-acba-961236f2d3e9
+    date: 2026-01-19
+
+rescue-tablet-website:
+  type: web
+  title: Digitale Einsatzunterstützung für Rettungskräfte
+  organisation: rescueTABLET GmbH
+  url:
+    value: https://rescuetablet.de/
+    date: 2026-01-19
+
 jakobs-law:
   type: web
   title: Jakob's Law
@@ -298,6 +443,7 @@ duck_quote:
 d4h:
   type: web
   title: Uncomplicated Crisis & Emergency Management Software | D4H
+  organisation: D4H Technologies
   url:
     value: https://www.d4h.com/
     date: 2026-01-13

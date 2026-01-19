@@ -9,9 +9,10 @@ Without any user specific interaction the back end embeds data into the HTML via
 #align(center)[
   ```<script id="py-data" type="application/json">{{ py_data|safe }}</script>```
 ]
-Usually Jinja escapes HTML characters for safety reasons.
-For that reason and only because we know what exactly we passed Jinja to fill in we specify it as safe for Jinja so that the json string remains healthy.
-To ease declaring the layout of this data, `dataclasses` are used in python and `zod` in typescript, where both declarations need to represent the same structure.
+Jinja can escape HTML characters to prevent cross-site scripting vulnerabilities.
+For that reason and only because we know what exactly we passed Jinja to fill in we specify it as safe for Jinja so that the JSON string remains healthy.
+To ease declaring the layout of this data, `dataclasses` are used in Python and Zod @zod-web in TypeScript, where both declarations need to represent the same structure.
+Zod is used for schema validation with static type inference.
 They are located in files named `py_data.py` (see @py-data-py) and `py_data.ts` (see @py-data-ts) respectively as what they really represent is data sent from the python back end, received by the front end.
 
 #figure(
@@ -109,18 +110,18 @@ In this case for example once a module is requested to be loaded by the user, th
 @module-workflow visualizes what routes lead to what type of data being send to the front end.
 Once the route `module/:moduleKey` is appended to the index route the `ModuleContainer` will try to fetch data from the back end.
 If cached data is present it will show this data immediately until the asynchronous fetch comes back, otherwise it indicates that the module is loading.
+This is important because the time threshold for user feeling that he or she is directly manipulating the UI is 100ms @response-times.
 When a module is defined to request such data, we treat this data as critical to that module and therefore not mount any of its elements until that data is fetched successfully.
 It is important to understand that the semantics of that fetched data cannot be validated by the `ModuleContainer`.
-Due to this it needs to be validated by the module itself.
+Due to this, it needs to be validated by the module itself.
 If successful it will replace the stale data with the received fresh data automatically.
 Noteworthy is that a module can be shown on its own page or as a tile on the dashboard.
 In both cases the same cache will be used.
-The use-case of adding a module tile to the dasboard and then wanting to fullscreen this module on its own page, therefore results in immediate presentation of that same data.
-Additionally the user can specify whether the data needs to be continously refreshed defined by a time interval $i$ in miliseconds.
-The same procedure will be repeated every $i$ miliseconds accordingly, while the module is mounted on the dashboard or on its own page.
+The use-case of adding a module tile to the dashboard and then wanting to fullscreen this module on its own page, therefore results in immediate presentation of that same data.
+Additionally, the user can specify whether the data needs to be continuously refreshed,defined by a time interval $i$ in milliseconds.
+The same procedure will be repeated every $i$ milliseconds, while the module is mounted on the dashboard or on its own page.
 
 #figure(
   image("../assets/module_workflow.drawio.svg"),
-  placement: auto,
-  caption: [],
+  caption: [Workflow of back-end to front-end communication for a route like `/index/:emergency_index/module/:moduleKey`.],
 ) <module-workflow>

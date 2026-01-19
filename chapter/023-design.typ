@@ -80,14 +80,19 @@ They enable users to quickly create clean layouts with up to four modules being 
 If a tile is dragged onto the center of another attached tile, it can replace the existing one, or divide it either vertically or horizontally, when dropped onto one of the directional splitting zones.
 
 === Color Design <color-contrast>
-Defining colors throughout even a medium-sized application can result in a mess of same purpose colors defined at multiple locations in code resulting difficult maintainability and even inconsistent colors.
+Defining colors throughout even a medium-sized application can result in a mess of same purpose colors defined at multiple locations in code making maintainability difficult and colors sometimes incosistent.
 A central file defining the color scheme ensures maintainability and scalability.
-If desired a different theme could be added, through a media query for dark themes for example, just in this file replacing the values for the same variables; no further changes needed.
-In this thesis the file `colors.scss` (see @color-file) defines all the used colors connecting them with the purpose-named variables.
+Support for different themes (e.g. a dark vs light mode) is achievable through media queries, replacing the color values for the same variable.
+In this thesis the file `colors.scss` (see @color-file) defines all the used colors setting them to semantically named variables.
+This follows the idea that colors should communicate meaning, which the variable name should represent.
+This makes later changes to colors easier.
+Take for example the color name `sky-blue`, which now has been referenced everywhere in the code where that color was deemed to be fitting.
+Changing that color is difficult now because every reference needs to be changed and additionally validated if the change is appropriate to the context of that usage.
+Since it was not a choice by a semantic name, it might have been used for something, where maybe the old color is still a more valid choice @semantic-colors.
 
 #figure(
   code(
-"$black-0:     #212529;
+"$black-0:      #212529;
 $black-1:      #2b3035;
 $grey-0:       #343a40;
 $grey-1:       #444a50;
@@ -143,7 +148,7 @@ Each of the channels $R, G, B$ in this formula are computed by taking the origin
     (frac(overline(c) + 0.055, 1.055, style: "horizontal"))^2.4 op(", otherwise")
   )$
 ]
-The important color variables used for text are `--text-color` and `--acc-foreground`. Both of them need to be compared to the background colors they are displayed on. As the css-style variables are purpose-named and hence would result in redundant comparisons the contrast ratio is computed relative to the color values that are used for background purposes.
+The important color variables used for text are `--text-color` and `--acc-foreground`. Both of them need to be compared to the background colors they are displayed on. As the CSS-style variables are semantically named and hence would result in redundant comparisons the contrast ratio is computed relative to the color values that are used for background purposes.
 
 #figure(
   image("../assets/text_color_contrasts.drawio.svg"),

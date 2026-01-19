@@ -1,15 +1,19 @@
 #import "../utils.typ": *
 
 == Background
+To understand some of the development choices, it is important have basic knowledge about the ISAN project, which gets utilized on the back end, and the Vue framework, which is used on the front end. Furthermore design choices are made according to related standard and accessibility guidelines, mentioned in this chapter.
+
+=== Design Standards and Accessibility in Interactive Software
+#include("design-standards.typ")
 
 === The ISAN Project
 This thesis is build on the International Standard Accident Number (ISAN) project by the Peter L. Reichertz Institute (PLRI) of Braunschweig and Hannover.
 
 The rescue chain is typically comprised of three different information and communication technology (ICT) systems: a curing system, responding system and an alerting system.
-With the rise of more and more smart devices the alerting system can span all kinds of technology from a smart watch or any kind of smart wearable to a smart car or complete smart home.
-The responding system to such an emergency is a composite of any kind of units like: firefighter, ambulances, air or sea rescue units.
-Medical institutions like the hospital, a specific emergency room or a reha clinic are part of the curing system.
-If provided even before subject's delivery with personal data, medications or vital signs, these institutions could provide better health care @haghi2021automatic.
+With the substantial increase of smart devices in the last decade, the alerting system can span all kinds of technology from a smart watch or any kind of smart wearable to a smart car or complete smart home.
+The responding system to such an emergency is a composite of any kind of units like: firefighter, ambulances and air or sea rescue units.
+Medical institutions like hospitals, a specific emergency room or a reha clinic are part of the curing system.
+These institutions could provide better health care, if provided with personal data, medications or vital signs before the subject's delivery @haghi2021automatic.
 Today, these stages are supported by largely isolated systems, resulting in manual data re-entry, delays and information loss.
 
 The ISAN functions as a shared unique identifier linking distributed systems without requiring tight coupling or a centralized architecture. Instead of attempting to standardize all emergency data formats, ISAN provides a minimal common reference, similar in spirit to a primary key in distributed databases. The goal of the ISAN project has two core objectives:
@@ -18,11 +22,13 @@ The ISAN functions as a shared unique identifier linking distributed systems wit
 This proposed unique identifier aims to work with a multiplicity of different scenarios and hardware @spicher2021proposing.
 
 ==== ISAN Structure
-The ISAN embeds accident metadata and a unique identifier directly into a compact string following the fixed-order paradigm. The metadata consists of:
-1. time + uncertainty
-2. location + uncertainty
-3. altitude + uncertainty (optional)
-This results in a total of seven fields, each following the tag-value paradigm. Tag and values are separated by the "|" character. The tag is a single-character literal indicating the format with "0" always indicating the preferred choice. All kinds of different formats for time, location, altitude and unique identifiers are discussed, but the preferred once are:
+The ISAN embeds accident metadata and a unique identifier directly into a compact string following the fixed-order paradigm @spicher2021proposing.
+The metadata consists of time, location and altitude of the accident and also models the uncertainty of each of these values.
+The altitude is optional.
+This results in a total of seven data fields, each following a tag-value paradigm, meaning a value field is preceeded by a tag field.
+Those tags and values are separated by the "|" character.
+The tag is a single-character literal indicating the format, with "0" always indicating the preferred choice.
+The following shows a list with all the discussed formats for time, location, altitude and unique identifiers with the preferred once in bold by Spicher et al. @spicher2021proposing:
 
 #table(
   columns: (auto, auto),

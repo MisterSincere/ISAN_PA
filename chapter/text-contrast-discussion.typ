@@ -31,7 +31,8 @@ The color choices have already been shown in @color-contrast and the contrast ra
 
 WCAG 2.1 in chapter 1.4.6 requires a contrast ratio of at least 7:1 for text and images of text @wcag_contrast.
 @text-color-contrasts shows low contrasts for the text color on the accentuated color (orange), this has been avoided because of this and the accentuated foreground color is used instead, which achieves the required contrast ratio.
-This is the case for the emergency selection button, where when hovered the background color transitions to a slightly darker orange, which does not reach the intended contrast ratio.
-Hovering is not a typical use-case on touchscreens and only an edge case, which is why this is regarded as not that important.
-Similar to the module button text and icon having slightly less of a contrast ratio once that module's page is currently visible.
-The information on that button is redundant information to the module's page displaying its module name as a big headline and the contrast ratio only misses the requirement by less than 0.1, which is why this also should not worsen the user experience.
+This is the case for the emergency selection button, where, when hovered, the background color transitions to a slightly darker orange, which does not reach the intended contrast ratio.
+While it is possible to hover elements on touchscreens, it is a rather rare occasion.
+Consequently, a lower contrast ratio between the colors of hovered text and its background are deemed acceptable.
+This is similar to the module button text and icon having slightly less of a contrast ratio once that module's page is currently visible and the module button's background becomes a slightly brighter grey.
+The information on that button is redundant information to the module's page displaying its module name as a big headline and the contrast ratio only misses the requirement by less than 0.1, concluding this will not have a negative impact on the user experience.

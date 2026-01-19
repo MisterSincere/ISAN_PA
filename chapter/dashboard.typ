@@ -10,10 +10,10 @@ Those tiles will give its module less space for the same data.
 Therefore modules should implement different visualizations, filtering their visualized data by importance in regards to how much space they have.
 This can be done via media queries for example.
 
-The dashboard provides at most 4 `dropzones` to which only one tile each can be attached to.
+The dashboard provides at most four `dropzones` to which only one tile each can be attached to.
 However the initial `dropzones` only have the capability to attach to one half of the dashboard area (horizontally or vertically).
 This is related to the size of `dropzones` on a smaller touch pad and trying to keep splitting simple.
-There would be simply no need to artificially reduce the screen space a tile takes before there is the need to attach another tile for viewing its information.
+This allows tiles to take up as much screen space as available until additional tiles are attached.
 Once a tile is attached to one half, another tile can be dragged onto:
 - its center to replace that tile
 - the left or right third of a tile to split vertically on a horizontal tile

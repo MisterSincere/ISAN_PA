@@ -1,13 +1,13 @@
 = Conclusion
-This thesis presented the design and implementation of a modular web-based curing system interface for the International Standard Accident Number (ISAN) system.
-The focus lay on improving information accessibility in emergency situations by integrating data from different systems into a single, coherent application allowing for easy extensibility in the future.
+This thesis presents the design and implementation of a modular web-based curing system interface for the International Standard Accident Number (ISAN) system.
+The emphasis was placed on improving information accessibility in emergency situations by integrating data from different systems into a single, coherent application allowing for easy extensibility in the future.
 The project followed a component-based architecture built with Vue and TypeScript on the front end and a Python/Flask back end, applying established software engineering principles. Central contributions of this work is the development of an asynchronous module loading mechanism and a freely configurable dashboard to show information from multiple modules on the same page in a layout the user desires.
 
 The module loading mechanism loads modules dynamically, and their components are cached to reduce unnecessary workload and improve responsiveness.
 If configured to do so, modules can also retrieve data from the loader, loaded asynchronously and refreshed at specified intervals without the need to implement anything of that functionality.
 This data is cached across different views, ensuring that users can switch between the dashboard and full module pages without causing redundant requests.
 To simplify configuration, a YAML-based file was introduced, allowing module types and instances to be defined with minimal effort.
-This structure also provides a clear separation between module behavior and module implementation, suporting future extensibility.
+This structure also provides a clear separation between module behavior and module implementation, supporting future extensibility.
 
 The dashboard represents the core of the interface designed to allow flexible arrangement of module tiles.
 Users can position tiles freely or attach them to predefined dropzones, enabling them to create a layout that fits their preferences during an ongoing emergency.

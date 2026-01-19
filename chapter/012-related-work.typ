@@ -2,61 +2,35 @@
 
 == Related Work
 
-=== Design Standards and Accessibility in Interactive Software
-The design of interactive systems, especially in safety-critical domains such as emergency response, is guided by international standards that aim to ensure usability, accessibility, and reliability in general.
-In the context of human–computer interaction, these standards provide a shared framework for evaluating and designing user interfaces that support effective human performance under diverse conditions.
-
-One of the most prevalent standards in the EU regarding this area is the DIN EN ISO 9241 series, which defines ergonomic requirements for human–system interaction.
-It serves as an umbrella standard covering both hardware and software systems up to workplace ergonomics, with a strong emphasis on usability principles such as effectiveness, efficiency, user satisfaction @9241_general.
-ISO 9241-11 employs different definitions and concepts regarding usability.
-Usually ISO 9241-110 is of particular relevance, which formulates core dialogue principles including suitability for the task, self-descriptiveness, conformity with user expectations, and error tolerance @9241_110_essay.
-However, ISO 9241-110:2020 explicitly states that its principles are not universally applicable to every usage context and must be interpreted in relation to the specific task domain and user group like in safety-critical domains @9241_110_whole.
-This limitation is especially relevant in the case of emergency response systems, where users operate under extreme time pressure, high stress, and potentially degraded perceptual conditions.
-As a result, while ISO 9241 provides valuable general guidance, it does not prescribe concrete design solutions tailored to emergency scenarios, leaving significant room for domain-specific interpretation and adaptation.
-
-In addition to usability standards, *accessibility* regulations play a central role in contemporary user interface design.
-In Germany, the Barrierefreie-Informationstechnik-Verordnung (BITV 2.0) defines legal requirements for accessible digital systems used by public institutions.
-BITV 2.0 is closely aligned with EN 301 549, a European standard that specifies accessibility requirements for information and communication technology @bitv-site.
-EN 301 549 incorporates the Web Content Accessibility Guidelines (WCAG), particularly in Chapter 9, which addresses web-based user interfaces @en-301-549.
-
-WCAG defines success criteria across different conformance levels (A, AA, and AAA), with EN 301 549 encouraging AAA compliance where feasible, while also stating in chapter 9.5 that it is not recommended to be required as a general policy.
-Criteria such as enhanced contrast ratios, scalable text, and clear visual hierarchy are particularly relevant for emergency response interfaces, as they support readability in challenging environments and reduce visual strain.
-While accessibility standards are often associated with users with permanent impairments, W3C guidelines also list situational impairments as a barrier @wcag-situation-impairment and HCI research emphasizes reduced analytical thinking that are common in emergency operations @decision-making-under-stress-01.
-
-Existing standards thus establish an important foundation for usability and accessibility, but they do not fully address the specific interaction challenges of emergency response software or mention it only as a side note.
-The need to prioritize critical information, support rapid situation assessment, and minimize cognitive load requires design decisions that go beyond general-purpose standards.
-Consequently, this thesis builds upon established usability and accessibility guidelines, implementing and adapting  them within the context of an emergency-focused web application interface.
-
 === Existing Emergency Response Software
 A number of software systems have been developed to support emergency response operations by aggregating incident-related information and assisting coordination.
 Analyzing such systems provides insight into established design patterns, interaction paradigms, and functional priorities within the domain.
-
-==== rescueTablet
-rescueTABLET is a digital emergency management platform widely adopted by fire departments and emergency organizations in Germany, reportedly used by more than 750 organizations.
+\
+\
+_rescueTABLET_ is a digital emergency management platform widely adopted by fire departments and emergency organizations in Germany, reportedly used by more than 750 organizations @rescue-tablet-website.
 The system is designed to support incident command by providing an overview of operational data, resource allocation, and situational information.
 
 From an interaction design perspective, rescueTABLET follows a dashboard-oriented layout combined with a persistent sidebar navigation.
 Core information is presented using tiles and panels that group related data, allowing users to access different functional areas with minimal navigation depth.
 This design reflects a common pattern in emergency software, where information is spatially organized to support rapid scanning and recognition.
 The use of consistent visual structures across views supports user orientation and reduces the need for relearning during high-stress situations.
-
-
-==== Tablet Command
-Tablet Command is an emergency response platform primarily used by fire services in the United States and Canada.
-According to publicly available information, it is employed by more than 800 public safety agencies and has been used to manage over 170,000 incidents as of 2024.
+\
+\
+_TabletCommand_ is an incident management software primarily used by fire services in the United States and Canada.
+According to their website more than 50,000 emergency responders across North America use Tablet Command @tablet-command-overview.
 The system is explicitly designed for fire service operations, with a strong emphasis on unit and resource management.
 
 The user interface of Tablet Command also adopts a dashboard-centric structure with a sidebar-based navigation model.
 The system places particular focus on tracking units, assignments, and incident progression, reflecting its operational priorities.
-A high degree of configurability allows agencies to adapt the interface to local procedures and preferences, which can support organizational fit but may also introduce variability in interaction patterns across deployments.
+They claim that one of their advantages is early notification of structure fires and cardiac arrests of up to 30 to 60 seconds before traditional station alerting .
 
-In addition to its client-facing interface, Tablet Command provides a web-based backend portal for configuration and management tasks.
+In addition to its client-facing interface, Tablet Command provides a web-based portal for configuration and management tasks.
 The release of a major version update in 2021 introduced a revised interface structure, further emphasizing modular dashboards and centralized access to incident data.
 From an HCI standpoint, this separation between operational and administrative interfaces reflects a role-based interaction model, which can reduce complexity for users in the field.
-
-==== D4H
-D4H is a comprehensive emergency management platform used globally by over 100,000 responders across hundreds of organizations in more than 37 countries and six continents @d4h.
-According to their website, it has been recognized as a market leader in winter 2025 and ranked the number one emergency management software on G2.
+\
+\
+_D4H_ is a comprehensive emergency management platform used globally by over 100,000 responders across hundreds of organizations in more than 37 countries and six continents @d4h.
+According to their website, it has been recognized as a market leader in winter 2025 and ranked the number one emergency management software on G2 @d4h-g2-winner.
 These adoption metrics indicate that D4H serves a wide variety of operational contexts, from local fire departments to multinational emergency response organizations.
 
 From a design perspective, D4H emphasizes a modular and role-based interface.

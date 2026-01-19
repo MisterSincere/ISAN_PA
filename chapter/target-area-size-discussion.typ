@@ -11,14 +11,14 @@ It continues to specify exceptions, the two most important ones for this project
 
 Since the screen size DPI can vary this does not represent on use-cases in the real world.
 The actual size of a target with a fixed size, like a button, on a 10 inch FullHD screen is smaller than on a 20 inch screen with the same resolution.
-Therefore I compare the actual button sizes in centimeter on the NIDApad to the mean of the thumb width and index width, being 1.6cm and 1.2cm respetively @finger-width.
+Therefore, I compare the actual button sizes in centimeter on the NIDApad to the mean of the thumb width and index width, being 1.6cm and 1.2cm respetively @finger-width.
 Taking these average finger sizes into account, the following target size range can be computed as pixel per centimeter (ppc):
 #align(center)[
   $op("ppc")_x = frac(1920 op("px"), 25.68 op("cm"), style: "horizontal") approx 74.77$\
   $op("ppc")_y = frac(1080 op("px"), 14.45 op("cm"), style: "horizontal") approx 74.74$
 ]
-Since for a 16:9 ratio the DPI is about the same we stick with $op("ppc") = op("ppc")_x := 74.77 frac("px","cm")$ for further computations.
-The equivalent in pixels for the according finger sizes thus is:
+Since for a 16:9 ratio the DPI is approximately equivalent, we simplify further computations by using $op("ppc") = op("ppc")_x := 74.77 frac("px","cm")$.
+The equivalent in pixels for the according finger sizes is:
 #align(center)[
   #table(
     columns: (auto, auto),
@@ -64,7 +64,7 @@ This is because the width of our fingers aligns with the width of the screen rat
       else if (y == 9 and x == 3) { failure }
       else { none },
     table.header(
-      [*Button*], [*Area (px)*], [*AAA*], [*Finger width*]
+      [*Button*], [*Area (px)*], [*AAA*], [*Finger-width*]
     ),
     [Emergency selection on emergency select screen], [800(min) x 65], [yes], [yes],
     [Emergency selection on emergency view screen], [700(min) x 37.33], [partial], [yes],
@@ -76,13 +76,13 @@ This is because the width of our fingers aligns with the width of the screen rat
     [Module tile remove zone], [400 x 100], [yes], [yes],
     [Module tile remove confirm zone], [80 x 80], [yes], [no],
   ),
-  caption: [This table lists all buttons and target areas with their fixed or minimal size in pixel and compares them to the discussed WCAG 2.1 (AAA) target area size from chapter 2.5.5 and to the computed finger width in pixels. For the WCAG comparison meeting the requirement partially means that only one dimension fulfills the minimum size. The finger width is only compared to the width, where partial means that it matches the minimum width of an index finger but not that of a thumb.]
+  caption: [This table lists all buttons and target areas with their fixed or minimal size in pixel and compares them to the discussed WCAG 2.1 (AAA) target area size from chapter 2.5.5 and to the computed finger-width in pixels. For the WCAG comparison meeting the requirement partially means that only one dimension fulfills the minimum size. The finger-width is only compared to the width, where partial means that it matches the minimum width of an index finger but not that of a thumb.]
 ) <button-sizes>
 
 @button-sizes shows that most target areas fulfill both metrics.
-The selection of another emergency while managing the information of one, is deemed as a rare use-case, since usually the focus will be on the currently selected emergency.
-Furthermore the module tile close and maximum button have redundant target areas present.
+The selection of another emergency while managing the information of one, is deemed as a rare use-case, since the user's focus will typically be directed towards the emergency that has been selected for the time being.
+Furthermore, the module tile close and maximum button have redundant target areas present.
 To maximize a module the according button on the sidebar can be used and to remove a tile from the dashboard it can be dragged onto a zone at the bottom that fulfills both metrics.
-The confirmation zone to remove a tile does not meet the requirement for the finger width since it is smaller, which is on purpose because removing a tile accidentally should be a hard to reach use-case.
+The confirmation zone to remove a tile does not meet the requirement for the finger-width since it is intentionally sized smaller to reduce the likelihood of removing a tile on accident.
 Additionally the user is dragging and thus gets continuous feedback whether the confirmation zone is currently hovered.
 At last the sidebar module button does only meet the width of the index finger or the thumb once the sidebar is expanded.

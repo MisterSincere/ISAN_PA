@@ -33,7 +33,7 @@
         <mxCell id="Gh8tZHdKIS2r9l9__rhv-8" value="Handles routing, layout, styling, reactivity" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=0;spacingLeft=4;fontFamily=Ubuntu Light;fontSize=11;strokeColor=none;" vertex="1" parent="1">
           <mxGeometry x="370" y="250" width="100" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="Gh8tZHdKIS2r9l9__rhv-9" value="Dynamically loads&lt;div&gt;module components,&lt;/div&gt;&lt;div&gt;fetches data&lt;/div&gt;&lt;div&gt;asynchronously,&lt;/div&gt;&lt;div&gt;handles cache&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=0;spacingLeft=4;fontFamily=Ubuntu Light;fontSize=11;strokeColor=none;spacingTop=-2;convertToSvg=1;" vertex="1" parent="1">
+        <mxCell id="Gh8tZHdKIS2r9l9__rhv-9" value="Dynamically loads&lt;div&gt;module components,&lt;/div&gt;&lt;div&gt;fetches data&lt;/div&gt;&lt;div&gt;asynchronously,&lt;/div&gt;&lt;div&gt;handles cache&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=0;spacingLeft=4;fontFamily=Ubuntu Light;fontSize=11;strokeColor=none;spacingTop=-4;convertToSvg=1;" vertex="1" parent="1">
           <mxGeometry x="520" y="250" width="100" height="80" as="geometry" />
         </mxCell>
         <mxCell id="Gh8tZHdKIS2r9l9__rhv-13" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" target="Gh8tZHdKIS2r9l9__rhv-5">

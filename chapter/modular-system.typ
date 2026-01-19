@@ -1,16 +1,16 @@
 #import "@preview/cetz:0.4.2"
 #import "../utils.typ": *
 
-The main purpose of implementing a modular system is to remove redundancy.
-While code redundancy is hailed as one of the biggest evils in programming, the most important redundancy to mitigate in this project is the one of implementing complex processes managing UI/UX specific tasks.
+The main purpose of implementing a modular system is to avoid redundant implementation and reiterations.
+While code redundancy is hailed as one of the biggest evils in programming @code-redundancy-bad, the most important redundancy to mitigate in this project is the one of implementing complex processes managing UI/UX specific tasks.
 As a core property of rather complex tasks that are re-used, comes the necessity of some of their behavior being configurable.
 Thus it is necessary to differentiate configurable properties and make them easy to configure for any developer who wants to implement a module.
 
 The available data received by the alerting system is categorized by a module type and a specific module name.
 For example specific module names (or instances as we are going to call it) could be "doorcode" or "DAR" (digital accident report), but both have the same module type "text". 
-The following properties can be defined on the scope of a module instance or the whole type.
-#align(center)[
-  #table(
+The following properties in @module-properties can be defined on the scope of a module instance or the whole type.
+#figure(
+  table(
     columns: (auto, auto, auto),
     align: (left + horizon, left + horizon, center + horizon),
     table.header(
@@ -19,12 +19,13 @@ The following properties can be defined on the scope of a module instance or the
     [icon_path], [Server root path to the .svg file containing the desired icon to represent that module.], [fa-diamond],
     [fetch_init_data], [If set to `true`, data will be requested from the back end as explained earlier.], [false],
     [refresh_interval_ms], [Only read if `fetch_init_data` is set to true. The interval in miliseconds in which the data will be refreshed from the back end.], [-1]
-  )
-]
+  ),
+  caption: [List of configurable properties per module and their defaults.]
+) <module-properties>
 
 ==== Module Container
 The whole implementation of the `ModuleContainer.vue` is too big to include it here.
-The heart of it is the `module_loader.ts` which implements the asynchronous loading process and spans over 150 lines.
+The heart of it is the `module_loader.ts` which implements the asynchronous loading process.
 Instead @module-container-template just shows the `template` implementation of the `ModuleContainer.vue`, which demonstrates what is shown at what state of loading.
 
 #figure(
@@ -66,17 +67,17 @@ Instead @module-container-template just shows the `template` implementation of t
   caption: [The template part of the module container SFC.],
 ) <module-container-template>
 
-Most important here is Vue's `component` element (see @module-container-template, line 8), which will be whatever component is set to the `:is` property.
-So once the SFC representing the desired module is loaded, `handle.component` will be set and the `component` element can be shown as indicated by the condition in `v-if`.
+Most important here is Vue's `component` element (see @module-container-template, line 8), which will be the component set to the `:is` property.
+Once the desired module is loaded, `handle.component` will be set and the `component` element can be shown as indicated by the condition in `v-if`.
 
 Most of the loading logic is put away in the `module_loader.ts` composable.
 The component itself only manages the rendering according to what `DataLoadState` and `ComponentLoadState` has been set.
 The `module_loader.ts` implements a `load_module` method for importing/loading the Vue component file and for fetching the according module data separately if desired.
-Moreover the Vue component and module data are cached.
+Moreover, the Vue component and module data are cached in browser's local storage @local-storage-web.
 While the Vue component is a static asset and will not change during a client session, the module data can get outdated and if defined by the previously discussed property `refresh_interval_ms` will be refreshed.
 
-To determine what module is currently desired the `ModuleContainer.vue` will determine the module name and type from the current route parameter `moduleKey`.
-The container will then try to import the correct module, which is after successful loading set to the `component` object.
+To determine what module is currently desired the `ModuleContainer.vue` extracts the module name and type from the current route parameter `moduleKey`.
+The container will then try to import the correct module, which is set to the #raw("component") object after loading successfully.
 If data has been requested and received it gets automatically passed into the component via a conditional `v-bind`.
 
 ==== Defining a Module

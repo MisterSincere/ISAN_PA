@@ -2,6 +2,8 @@
 #import "../utils.typ": *
 
 == Implementation
+This chapter, while elaborating the implementation on the most important results like the modular system and dashboard, also explains some ideas and implementations details of the general architecture.
+
 
 === General Architecture
 #include("general-architecture.typ")
